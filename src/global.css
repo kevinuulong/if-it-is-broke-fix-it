@@ -1,0 +1,21 @@
+:root {
+    /* Colors */
+
+    /* Primary */
+    --Primary-UC-Red: #E00122;
+    --Primary-UC-Black: #000000;
+    --Primary-White: #FFFFFF;
+
+    /* Secondary */
+    --Secondary-UC-Dark-Red: #B8011C;
+    --Secondary-Grey: #F3F3F3;
+    
+    /* Tertiary */
+    --Tertiary-Calhoun-Maroon: #890519;
+    --Tertiary-Steger-Silver: #A7A5AA;
+    --Tertiary-Main-Street-Mist: #E0DFE3;
+    --Tertiary-Bearcats-Black: #333333;
+    --Tertiary-Gettler-Gold: #D1B179;
+    --Tertiary-Tangeman-Tan: #EADBC1;
+
+}
