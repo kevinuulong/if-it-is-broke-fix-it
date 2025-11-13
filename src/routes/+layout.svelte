@@ -38,8 +38,6 @@
 <div class="red_box">
 </div>
 
-{@render children()}
-
 <div class="container">
 	<div class="menu">
 		{#each buttons as b}
@@ -52,6 +50,7 @@
 	</div>
 
 	<div class="main_screen">
+		{@render children()}
 	</div>
 </div>
 <style>
