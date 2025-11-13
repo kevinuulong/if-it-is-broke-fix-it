@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     /* Colors */
 
@@ -9,7 +11,7 @@
     /* Secondary */
     --Secondary-UC-Dark-Red: #B8011C;
     --Secondary-Grey: #F3F3F3;
-    
+
     /* Tertiary */
     --Tertiary-Calhoun-Maroon: #890519;
     --Tertiary-Steger-Silver: #A7A5AA;
@@ -18,4 +20,60 @@
     --Tertiary-Gettler-Gold: #D1B179;
     --Tertiary-Tangeman-Tan: #EADBC1;
 
+}
+
+html,
+body {
+    margin: 0;
+
+    color: var(--Primary-UC-Black);
+    background-color: var(--Primary-White);
+
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+}
+
+h1 {
+    font-family: "Noto Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h2 {
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h3,
+b {
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    color: var(--Primary-UC-Red);
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
