@@ -7,6 +7,7 @@
 	import addOnIcon from '$lib/icons/CalendarAddOn.svg';
 	import popupIcon from '$lib/icons/OpenInNew.svg'
 	import rectangle from '$lib/icons/Rectangle 1.svg'
+	import ProgressWidget from '$lib/ProgressWidget.svelte';
 
 	import { page } from '$app/stores';
 	import { goto,invalidateAll } from '$app/navigation';
@@ -79,6 +80,7 @@
 	.main_screen{
 		display: 1;
 		flex-direction: column;
+		padding: 10px;
 	}
 
 	.menu_button{

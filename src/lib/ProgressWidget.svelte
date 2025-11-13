@@ -11,8 +11,14 @@
     </h2>
 
     <div class = "charts">
-        <PieChart data = {ClassData} />
-        <PieChart data = {CoopData} />
+        <div class = "pieChart">
+            <PieChart data = {ClassData} />
+            <text>Classes</text>
+        </div>
+        <div class = "pieChart">
+            <PieChart data = {CoopData} />
+            <text>Co-op</text>
+        </div>
     </div>
 
     <div class = "key">
@@ -50,6 +56,14 @@
         align-self: stretch;
     }
 
+    .pieChart{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
     .key{
         display: flex;
         flex-direction: column;
@@ -70,7 +84,7 @@
         width: 24px;
         height: 24px;
         aspect-ratio: 1/1;
-        stroke-width: 1px;
+        outline: #000000;
         border-radius: 12px;
     }
 </style>
