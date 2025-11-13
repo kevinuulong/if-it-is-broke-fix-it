@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Complete",
+    "value": 90,
+    "color": "#25EC93"
+  },
+  {
+    "name": "Current",
+    "value": 15,
+    "color": "#6CC6EA"
+  },
+  {
+    "name": "Missing",
+    "value": 6,
+    "color": "#EC2542"
+  },
+  {
+    "name": "Future",
+    "value": 9,
+    "color": "#F3F3F3"
+  }
+]
