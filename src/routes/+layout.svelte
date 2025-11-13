@@ -1,5 +1,7 @@
 <script>
 	import favicon from '$lib/assets/favicon.svg';
+	import "../global.css";
+  
 	import homeIcon from '$lib/icons/Home.svg';
 	import missingIcon from '$lib/icons/Warning.svg';
 	import upcomingIcon from '$lib/icons/EventUpcoming.svg';
@@ -7,9 +9,12 @@
 	import addOnIcon from '$lib/icons/CalendarAddOn.svg';
 	import popupIcon from '$lib/icons/OpenInNew.svg'
 	import rectangle from '$lib/icons/Rectangle 1.svg'
+  
 	import back from '$lib/icons/ArrowBack.svg'
 	import history from '$lib/icons/History.svg'
 	import favorite from '$lib/icons/Favorite.svg'
+  
+	import ProgressWidget from '$lib/ProgressWidget.svelte';
 
 	import { page } from '$app/stores';
 	import { goto,invalidateAll } from '$app/navigation';
@@ -52,8 +57,6 @@
 	</svg>
 </div>
 
-{@render children()}
-
 <div class="container">
 	<div class="menu">
 		{#each buttons as b}
@@ -73,6 +76,7 @@
 	</div>
 
 	<div class="main_screen">
+		{@render children()}
 	</div>
 </div>
 <style>
@@ -101,6 +105,7 @@
 	.main_screen{
 		display: 1;
 		flex-direction: column;
+		padding: 10px;
 	}
 
 	.menu_button{
@@ -112,7 +117,9 @@
 		gap: 20px;
 		border: 0px;
 		text-decoration: none;
-		color: black;
+		color: var(--Primary-UC-Black);
+    
+    box-sizing: border-box;
 	}
 	.current_button{
 		background: rgba(255, 255, 255, 0.70);
@@ -123,7 +130,9 @@
 		align-items: center;
 		gap: 20px;
 		text-decoration: none;
-		color: black;
+		color: var(--Primary-UC-Black);
+    
+    box-sizing: border-box;
 	}
 	.uc_logo{
 		margin-left: auto
