@@ -1,5 +1,7 @@
 <script>
 	import favicon from '$lib/assets/favicon.svg';
+	import "../global.css";
+  
 	import homeIcon from '$lib/icons/Home.svg';
 	import missingIcon from '$lib/icons/Warning.svg';
 	import upcomingIcon from '$lib/icons/EventUpcoming.svg';
