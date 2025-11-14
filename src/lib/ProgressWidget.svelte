@@ -28,13 +28,13 @@
             <button> Details Placeholder </button>
         </div>
         <div class = listItem>
-            <div class = "keyElipse" style="background-color:#EC2542"></div> 
-            <text> missing </text>
+            <div class = "keyElipse" style="background-color:#6CC6EA"></div>
+            <text> in progress </text>
             <button> Details Placeholder </button>
         </div>
         <div class = listItem>
-            <div class = "keyElipse" style="background-color:#6CC6EA"></div>
-            <text> in progress </text>
+            <div class = "keyElipse" style="background-color:#EC2542"></div> 
+            <text> missing </text>
             <button> Details Placeholder </button>
         </div>
         <div class = listItem>
@@ -92,7 +92,7 @@
         width: 24px;
         height: 24px;
         aspect-ratio: 1/1;
-        outline: #000000;
+        border: solid 1px black;
         border-radius: 12px;
     }
 </style>
