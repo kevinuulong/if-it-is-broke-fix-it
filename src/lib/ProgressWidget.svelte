@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class = "key">
+    <div class = listContainer>
         <div class = listItem>
             <div class = "keyElipse" style="background-color:#25EC93"></div>
             <text> complete </text>
@@ -64,7 +64,15 @@
         align-items: center;
     }
 
-    .key{
+    .listContainer .listItem:nth-child(odd) {
+        background-color: #ffffff; 
+    }
+
+    .listContainer .listItem:nth-child(even) {
+        background-color: #F3F3F3;
+    }
+
+    .listContainer{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
