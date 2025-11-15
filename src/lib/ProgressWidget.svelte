@@ -3,8 +3,29 @@
     import ClassData from "$lib/ClassData.json";
     import CoopData from "$lib/CoopData.json"
     import PieChart from "$lib/PieChart.svelte";
+    
 </script>
+<div class = "title">
+    
+        <h2>Degree Audit</h2>
+    
+</div>
+<div class = "left_right">
+<div class = "left">
+<Card>
+<h2>Missing Classes</h2>
+<text>These are the classes required for graduation you are missing that students in you
+    program have typically taken by now.
+</text>
+</Card>
 
+
+<Card>
+    <h2>In Progress</h2>
+    <text>These are the classes in which you are currently enrolled.</text>
+</Card>
+</div>
+<div class = "right">
 <Card>
     <h2>
         Degree Progress
@@ -44,8 +65,29 @@
         </div>
     </div>
 </Card>
+</div>
+</div>
 
 <style>
+    .left_right{
+        display:flex;
+        
+    }
+    .left{
+        display: flex;
+width: 600px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+margin: 10px;
+align-self: stretch;
+        
+    }
+    .right{
+        display: flex;
+        margin: 10px;
+        
+    }
 
     .charts{
         display: flex;
@@ -94,5 +136,14 @@
         aspect-ratio: 1/1;
         border: solid 1px black;
         border-radius: 12px;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 10px;
+        align-self: stretch;
     }
 </style>
