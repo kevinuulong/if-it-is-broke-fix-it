@@ -19,22 +19,35 @@
 <div class = "left">
    
 <Card>
- 
- 
-    <h2><img class="iconImage" src={warning} alt="warning" />
-        Missing Classes</h2>
+ <div class = "gap">
+ <h2><img class="iconImage" src={warning} alt="Warning" />  
+    Missing Classes</h2>
+    </div>
+ <div class = "actualCourses">
+    
 <text>These are the classes required for graduation you are missing that students in you
     program have typically taken by now.
 </text>
         
-            <div class = "actualCourses">
-            <div class = listContainer style="width:96%;">
+            
+            <div class = listContainer style="width:89%;">
             <div class = listItem style="width:100%">
             <text> CS 5167 </text>
-            
+            <div>
+            <text>See Details</text>
             <Button type="link">
-            See Details
+            Plan Course <img class ="iconImage" src={openInNew} alt="Open In New Tab"/>
             </Button>
+            </div>
+            </div>
+            <div class = listItem style="width:100%">
+            <text> CS 5124 </text>
+            <div>
+            <text>See Details</text>
+            <Button type="link">
+            Plan Course <img class ="iconImage" src={openInNew} alt="Open In New Tab"/>
+            </Button>
+            </div>
             </div>
             
             </div>
@@ -51,47 +64,50 @@
 
 
 <Card>
- 
- 
-    <h2><img class="iconImage" src={hourglass} alt="hourglass" />
-        In Progress Classes</h2>
-<text>These are the classes in which you are currently enrolled.
+ <div class = "gap">
+ <h2><img class="iconImage" src={hourglass} alt="In Progress" />  
+    Missing Classes</h2>
+    </div>
+ <div class = "actualCourses">
+    
+<text>These are the classes required for graduation you are missing that students in you
+    program have typically taken by now.
 </text>
-        <div class = "actualCourses">
-        <div class = listContainer style="width:96%;">    
-        <div class = listItem style="width:100%">
-            <text> CS 5167 </text>
+        
             
+            <div class = listContainer style="width:89%;">
+            <div class = listItem style="width:100%">
+            <text> CS 5167 </text>
             <Button type="link">
             See Details
             </Button>
-        </div>
-       
-           
-        <div class = listItem style="width:100%">
-            <text> CS 5167 </text>
-            
+            </div>
+            <div class = listItem style="width:100%">
+            <text> EECE 5136 </text>
             <Button type="link">
             See Details
             </Button>
-        </div>
-        <div class = listItem style="width:100%">
-            <text> CS 5167 </text>
-            
+            </div>
+            <div class = listItem style="width:100%">
+            <text> FAA 1062 </text>
             <Button type="link">
             See Details
-            </Button><img class="iconImage" src={openInNew} alt="Open In New Tab" />
+            </Button>
+            </div>
             
-        </div>
-        </div> 
-        </div>
+
+
+
+            </div>
+                
+            </div>
+
+        
         <div class="leanRightButton">
             <Button>
             See Details
             </Button>
         </div>
-
-        
 </Card>
 </div>
 <div class = "right">
@@ -139,6 +155,12 @@
 
 <style>
 
+    .gap{
+        display: flex;
+    padding-right: 347px;
+    align-items: center;
+    gap: 20px;
+    }
     .leanRightButton {
     display: flex;
     width: 100%;
@@ -151,11 +173,12 @@
         flex-shrink: 0;
     }
     .actualCourses{
-        width:100%;
-        display: flex;
-    padding: 5px 10px;
-    align-items: center;
-    gap: 10px;
+    width:100%;
+    display: flex;
+    padding-left: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
     align-self: stretch;
     }
     
@@ -219,6 +242,7 @@ align-self: stretch;
         align-self: stretch;
         justify-content: space-between;
     }
+    
 
     .keyElipse{
         width: 24px;
