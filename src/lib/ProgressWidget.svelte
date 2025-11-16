@@ -3,26 +3,95 @@
     import ClassData from "$lib/ClassData.json";
     import CoopData from "$lib/CoopData.json"
     import PieChart from "$lib/PieChart.svelte";
+    import warning from "$lib/icons/Warning.svg";
+    import hourglass from "$lib/icons/HourglassTop.svg"
+    import openInNew from "$lib/icons/OpenInNew.svg"
+    import Button from "./Button.svelte";
     
 </script>
 <div class = "title">
     
         <h2>Degree Audit</h2>
+
     
 </div>
 <div class = "left_right">
 <div class = "left">
+   
 <Card>
-<h2>Missing Classes</h2>
+ 
+ 
+    <h2><img class="iconImage" src={warning} alt="warning" />
+        Missing Classes</h2>
 <text>These are the classes required for graduation you are missing that students in you
     program have typically taken by now.
 </text>
+        
+            <div class = "actualCourses">
+            <div class = listContainer style="width:96%;">
+            <div class = listItem style="width:100%">
+            <text> CS 5167 </text>
+            
+            <Button type="link">
+            See Details
+            </Button>
+            </div>
+            
+            </div>
+                
+            </div>
+
+        
+        <div class="leanRightButton">
+            <Button>
+            See Details
+            </Button>
+        </div>
 </Card>
 
 
 <Card>
-    <h2>In Progress</h2>
-    <text>These are the classes in which you are currently enrolled.</text>
+ 
+ 
+    <h2><img class="iconImage" src={hourglass} alt="hourglass" />
+        In Progress Classes</h2>
+<text>These are the classes in which you are currently enrolled.
+</text>
+        <div class = "actualCourses">
+        <div class = listContainer style="width:96%;">    
+        <div class = listItem style="width:100%">
+            <text> CS 5167 </text>
+            
+            <Button type="link">
+            See Details
+            </Button>
+        </div>
+       
+           
+        <div class = listItem style="width:100%">
+            <text> CS 5167 </text>
+            
+            <Button type="link">
+            See Details
+            </Button>
+        </div>
+        <div class = listItem style="width:100%">
+            <text> CS 5167 </text>
+            
+            <Button type="link">
+            See Details
+            </Button><img class="iconImage" src={openInNew} alt="Open In New Tab" />
+            
+        </div>
+        </div> 
+        </div>
+        <div class="leanRightButton">
+            <Button>
+            See Details
+            </Button>
+        </div>
+
+        
 </Card>
 </div>
 <div class = "right">
@@ -69,6 +138,27 @@
 </div>
 
 <style>
+
+    .leanRightButton {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end; /* pushes content to the right */
+    align-items: flex-start;
+    }
+    .iconImage{
+        width: 22px;
+        height: 19px;
+        flex-shrink: 0;
+    }
+    .actualCourses{
+        width:100%;
+        display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    }
+    
     .left_right{
         display:flex;
         
