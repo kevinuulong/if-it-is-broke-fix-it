@@ -9,17 +9,19 @@
 	import addOnIcon from "$lib/icons/CalendarAddOn.svg";
 	import popupIcon from "$lib/icons/OpenInNew.svg";
 	import rectangle from "$lib/icons/Rectangle 1.svg";
-
-	import back from "$lib/icons/ArrowBack.svg";
-	import history from "$lib/icons/History.svg";
-	import favorite from "$lib/icons/Favorite.svg";
+	import back from "$lib/icons/ArrowBack.svg?raw";
+	import history from "$lib/icons/History.svg?raw";
+	import favorite from "$lib/icons/Favorite.svg?raw";
 
 	import ProgressWidget from "$lib/ProgressWidget.svelte";
 
 	import { page } from "$app/stores";
+	import { browser } from "$app/environment";
 	import { goto, invalidateAll } from "$app/navigation";
+	import Button from "$lib/Button.svelte";
 
 	let { children } = $props();
+	let previousPath = "/";
 
 	let buttons = [
 		{ id: "/", icon: homeIcon, label: "Home", popup: false },
@@ -49,12 +51,17 @@
 		},
 	];
 
-	function redirect(endpoint) {
+	/*function redirect(endpoint) {
 		if ($page.url.pathname === endpoint) {
 			invalidateAll();
 		} else {
+			previousPath = $page.url.pathname
 			goto(endpoint, { invalidateAll: true });
 		}
+	}*/
+
+	function goback(){
+		window.history.back()
 	}
 </script>
 
@@ -63,42 +70,10 @@
 </svelte:head>
 
 <div class="red_box">
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		width="24"
-		height="24"
-		viewBox="0 0 24 24"
-		fill="none"
-	>
-		<path
-			d="M7.825 13L13.425 18.6L12 20L4 12L12 4L13.425 5.4L7.825 11H20V13H7.825Z"
-			fill="white"
-		/>
-	</svg>
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		width="24"
-		height="24"
-		viewBox="0 0 24 24"
-		fill="none"
-	>
-		<path
-			d="M12 21C9.7 21 7.696 20.2377 5.988 18.713C4.28 17.1883 3.30067 15.284 3.05 13H5.1C5.33333 14.7333 6.10433 16.1667 7.413 17.3C8.72167 18.4333 10.2507 19 12 19C13.95 19 15.6043 18.321 16.963 16.963C18.3217 15.605 19.0007 13.9507 19 12C18.9993 10.0493 18.3203 8.39533 16.963 7.038C15.6057 5.68067 13.9513 5.00133 12 5C10.85 5 9.775 5.26667 8.775 5.8C7.775 6.33333 6.93333 7.06667 6.25 8H9V10H3V4H5V6.35C5.85 5.28333 6.88767 4.45833 8.113 3.875C9.33833 3.29167 10.634 3 12 3C13.25 3 14.421 3.23767 15.513 3.713C16.605 4.18833 17.555 4.82967 18.363 5.637C19.171 6.44433 19.8127 7.39433 20.288 8.487C20.7633 9.57967 21.0007 10.7507 21 12C20.9993 13.2493 20.762 14.4203 20.288 15.513C19.814 16.6057 19.1723 17.5557 18.363 18.363C17.5537 19.1703 16.6037 19.812 15.513 20.288C14.4223 20.764 13.2513 21.0013 12 21ZM14.8 16.2L11 12.4V7H13V11.6L16.2 14.8L14.8 16.2Z"
-			fill="white"
-		/>
-	</svg>
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		width="24"
-		height="24"
-		viewBox="0 0 24 24"
-		fill="none"
-	>
-		<path
-			d="M12 21L10.55 19.7C8.86667 18.1833 7.475 16.875 6.375 15.775C5.275 14.675 4.4 13.6873 3.75 12.812C3.1 11.9367 2.646 11.1327 2.388 10.4C2.13 9.66733 2.00067 8.91733 2 8.15C2 6.58333 2.525 5.275 3.575 4.225C4.625 3.175 5.93333 2.65 7.5 2.65C8.36667 2.65 9.19167 2.83333 9.975 3.2C10.7583 3.56667 11.4333 4.08333 12 4.75C12.5667 4.08333 13.2417 3.56667 14.025 3.2C14.8083 2.83333 15.6333 2.65 16.5 2.65C18.0667 2.65 19.375 3.175 20.425 4.225C21.475 5.275 22 6.58333 22 8.15C22 8.91667 21.871 9.66667 21.613 10.4C21.355 11.1333 20.9007 11.9373 20.25 12.812C19.5993 13.6867 18.7243 14.6743 17.625 15.775C16.5257 16.8757 15.134 18.184 13.45 19.7L12 21Z"
-			fill="white"
-		/>
-	</svg>
+	<Button icon={back} onclick={() => goback()}></Button>
+	<Button icon={history}></Button>
+	<Button icon={favorite}></Button>
+
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="48"
@@ -161,6 +136,9 @@
 		align-items: center;
 		gap: 20px;
 		align-self: stretch;
+		position: fixed;
+		top: 0;
+		width: calc(100% - 40px);
 	}
 
 	.container {
@@ -174,12 +152,17 @@
 		display: 1;
 		width: 300px;
 		flex-direction: column;
+		height: 100vh;
+		position: fixed;
+		top:70px;
 	}
 
 	.main_screen {
 		display: 1;
 		flex-direction: column;
 		padding: 10px;
+		margin-top:70px;
+		margin-left: 300px;
 	}
 
 	.menu_button {
