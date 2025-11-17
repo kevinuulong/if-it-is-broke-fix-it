@@ -8,13 +8,11 @@
     import openInNew from "$lib/icons/OpenInNew.svg"
     import Button from "./Button.svelte";
 
-    
-        
     // Find objects by name
-    const complete = data.find(item => item.name === "Complete");
-    const current = data.find(item => item.name === "Current");
-    const missing = data.find(item => item.name === "Missing");
-    const future = data.find(item => item.name === "Future");
+    const complete = ClassData.find(item => item.name === "Complete").value;
+    const current = ClassData.find(item => item.name === "Current").value;
+    const missing = ClassData.find(item => item.name === "Missing").value;
+    const future = ClassData.find(item => item.name === "Future").value;
     
 </script>
 <div class = "title">
@@ -138,23 +136,22 @@
     <div class = listContainer>
         <div class = listItem>
             <div class = "keyElipse" style="background-color:#25EC93"></div>
-            <div>{complete}</div>
-            <text> complete </text>
+            <p>{complete} complete </p>
             <button> Details Placeholder </button>
         </div>
         <div class = listItem>
             <div class = "keyElipse" style="background-color:#6CC6EA"></div>
-            <text> in progress </text>
+            <p>{current} in progress </p>
             <button> Details Placeholder </button>
         </div>
         <div class = listItem>
             <div class = "keyElipse" style="background-color:#EC2542"></div> 
-            <text> missing </text>
+            <p>{missing} missing </p>
             <button> Details Placeholder </button>
         </div>
         <div class = listItem>
             <div class = "keyElipse" style="background-color:#F3F3F3"></div>
-            <text> future </text>
+            <p>{future} future </p>
             <button> Details Placeholder </button>
         </div>
     </div>
