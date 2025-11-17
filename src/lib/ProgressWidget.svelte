@@ -7,6 +7,14 @@
     import hourglass from "$lib/icons/HourglassTop.svg"
     import openInNew from "$lib/icons/OpenInNew.svg"
     import Button from "./Button.svelte";
+
+    
+        
+    // Find objects by name
+    const complete = data.find(item => item.name === "Complete");
+    const current = data.find(item => item.name === "Current");
+    const missing = data.find(item => item.name === "Missing");
+    const future = data.find(item => item.name === "Future");
     
 </script>
 <div class = "title">
@@ -130,6 +138,7 @@
     <div class = listContainer>
         <div class = listItem>
             <div class = "keyElipse" style="background-color:#25EC93"></div>
+            <div>{complete}</div>
             <text> complete </text>
             <button> Details Placeholder </button>
         </div>
