@@ -1,18 +1,6 @@
 <script>
-
+	import ProgressWidget from "$lib/ProgressWidget.svelte";
 </script>
 
-<div class="PageHeader">
+<ProgressWidget></ProgressWidget>
 
-</div>
-
-<style>
- .PageHeader{
-    display: flex;
-    padding: 10px 20px;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-    
- }
-</style>
