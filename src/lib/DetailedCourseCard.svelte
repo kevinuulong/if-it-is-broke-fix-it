@@ -12,16 +12,43 @@
         </svg>
     </button>
 
-    <p id="courseName">{courseName}</p>
+    <div id="infoholder">
+        <p id="courseName">{courseName}</p>
+        <div id="divider"></div>
+
+        <div id="info1">
+            <p class="detailtext">Grade: A</p>
+            <p class="detailtext">Units: 3.00</p>
+        </div>
+
+        <div id="info2">
+            <p class="detailtext">Professor: Firstname Lastname</p>
+            <p class="detailtext">When: Fall Semester 2023</p>
+        </div>
+    </div>
     
     <p id="courseDescription">{courseDescription}</p>
 </Card>
 
 <style>
 
+.detailtext {
+    display: flex;
+    height: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 #courseName {
     display: flex;
-    width: 800px;
+    width: 150px;
     height: 54px;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +59,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-}
+    }
 
 #courseDescription {
     width: 800px;
@@ -58,6 +85,38 @@
     top: 15px;
     fill: var(--Primary-UC-Black, #000);
     aspect-ratio: 1/1;
+}
+
+#infoholder {
+    display: flex;
+    width: 760px;
+    height: 54px;
+    padding: 0 10px;
+    align-items: center;
+    gap: 9px;
+    flex-shrink: 0;
+    }
+
+#divider {
+    width: 260px;
+    height: 54px;
+    flex-shrink: 0;
+}
+
+#info1 {
+    display: flex;
+    width: 95px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+#info2 {
+    display: flex;
+    width: 215px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
 }
 
 </style>
