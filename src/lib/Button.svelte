@@ -4,20 +4,20 @@
     const isIconButton = icon && !children;
 </script>
 
-{#if type !== "link"}
-    <button class={[type, { icon, "icon-button": isIconButton }]} {...rest}>
-        {@render children?.()}
-        {#if icon}
-            {@html icon}
-        {/if}
-    </button>
-{:else}
+{#if rest.href !== undefined}
     <a class={[type, { icon, "icon-button": isIconButton }]} {...rest}>
         {@render children?.()}
         {#if icon}
             {@html icon}
         {/if}
     </a>
+{:else}
+    <button class={[type, { icon, "icon-button": isIconButton }]} {...rest}>
+        {@render children?.()}
+        {#if icon}
+            {@html icon}
+        {/if}
+    </button>
 {/if}
 
 <style>
