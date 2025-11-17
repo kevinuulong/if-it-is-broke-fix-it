@@ -136,6 +136,9 @@
 		align-items: center;
 		gap: 20px;
 		align-self: stretch;
+		position: fixed;
+		top: 0;
+		width: calc(100% - 40px);
 	}
 
 	.container {
@@ -149,12 +152,17 @@
 		display: 1;
 		width: 300px;
 		flex-direction: column;
+		height: 100vh;
+		position: fixed;
+		top:70px;
 	}
 
 	.main_screen {
 		display: 1;
 		flex-direction: column;
 		padding: 10px;
+		margin-top:70px;
+		margin-left: 300px;
 	}
 
 	.menu_button {
