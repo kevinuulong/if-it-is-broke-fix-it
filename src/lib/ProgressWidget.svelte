@@ -7,6 +7,13 @@
     import hourglass from "$lib/icons/HourglassTop.svg";
     import openInNew from "$lib/icons/OpenInNew.svg?raw";
     import Button from "./Button.svelte";
+
+    // Find objects by name
+    const complete = ClassData.find(item => item.name === "Complete").value;
+    const current = ClassData.find(item => item.name === "Current").value;
+    const missing = ClassData.find(item => item.name === "Missing").value;
+    const future = ClassData.find(item => item.name === "Future").value;
+    
 </script>
 
 <div class="title">
@@ -117,7 +124,6 @@
     <div class="right">
         <Card>
             <h2>Degree Progress</h2>
-
             <div class="charts">
                 <div class="pieChart">
                     <PieChart data={ClassData} />
@@ -135,7 +141,7 @@
                         class="keyElipse"
                         style="background-color:#25EC93"
                     ></div>
-                    <text> complete </text>
+                    <p>{complete} complete </p>
                     <Button type="tertiary" href="./complete">See details</Button>
                 </div>
                 <div class="listItem">
@@ -143,7 +149,7 @@
                         class="keyElipse"
                         style="background-color:#6CC6EA"
                     ></div>
-                    <text> in progress </text>
+                    <p>{current} in progress </p>
                     <Button type="tertiary">See details</Button>
                 </div>
                 <div class="listItem">
@@ -151,7 +157,7 @@
                         class="keyElipse"
                         style="background-color:#EC2542"
                     ></div>
-                    <text> missing </text>
+                    <p>{missing} missing </p>
                     <Button type="tertiary" href="./missing">See details</Button>
                 </div>
                 <div class="listItem">
@@ -159,7 +165,7 @@
                         class="keyElipse"
                         style="background-color:#F3F3F3"
                     ></div>
-                    <text> future </text>
+                    <p>{future} future </p>
                     <Button type="tertiary" href="./future">See details</Button>
                 </div>
             </div>
