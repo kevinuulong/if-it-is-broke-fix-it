@@ -15,6 +15,7 @@
         align-items: flex-start;
         gap: 10px;
         align-self: stretch;
+        position: relative;
 
         border-radius: 5px;
         border: 1px solid var(--Tertiary-Steger-Silver, #a7a5aa);

@@ -5,6 +5,7 @@
 <div id="background">
     <h1 id="h1Header">Degree Audit</h1>
     <h2 id="h2Header">Missing Courses</h2>
+    <CourseCard courseName="CS 4156" courseDescription="This course covers over operating systems using Ubuntu VM."/>
 </div>
 
 <style>

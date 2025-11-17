@@ -6,9 +6,6 @@
 </script>
 
 <Card>
-    <div>
-
-    </div>
     <p id="courseName">{courseName}</p>
     <button id="redirectURL" on:click={() => window.location.href = redirectURL}>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -19,6 +16,7 @@
 </Card>
 
 <style>
+
 #courseName {
     display: flex;
     width: 800px;
@@ -47,13 +45,17 @@
 }
 
 #redirectURL {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     flex-shrink: 0;
-    aspect-ratio: 1/1;
+    margin: 0;
+    padding: 0;
     color: white;
     position: absolute;
     right: 25px;
     top: 15px;
+    fill: var(--Primary-UC-Black, #000);
+    aspect-ratio: 1/1;
 }
+
 </style>
