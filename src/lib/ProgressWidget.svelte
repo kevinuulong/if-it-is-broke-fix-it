@@ -56,7 +56,7 @@
                 </div>
                 <div>
                     <Button
-                    type="link"
+                    type="primary"
                     href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
                     >See Details</Button>
                 </div>
@@ -105,7 +105,8 @@
                 </div>
 
                 <Button
-                    type="link"
+                    
+                    type="primary"
                     href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_LIST.GBL?a=92"
                 >
                     See Details
