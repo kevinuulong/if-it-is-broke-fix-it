@@ -2,12 +2,16 @@
     import Card from "./Card.svelte";
     import ClassData from "$lib/ClassData.json";
     import CoopData from "$lib/CoopData.json";
+    import CoopData from "$lib/CoopData.json";
     import PieChart from "$lib/PieChart.svelte";
     import warning from "$lib/icons/Warning.svg";
     import hourglass from "$lib/icons/HourglassTop.svg";
     import openInNew from "$lib/icons/OpenInNew.svg?raw";
     import Button from "./Button.svelte";
 </script>
+
+<div class="title">
+    <h2>Degree Audit</h2>
 
 <div class="title">
     <h2>Degree Audit</h2>
@@ -120,11 +124,11 @@
             <div class="charts">
                 <div class="pieChart">
                     <PieChart data={ClassData} />
-                    <p>Classes</p>
+                    <text>Classes</text>
                 </div>
                 <div class="pieChart">
                     <PieChart data={CoopData} />
-                    <p>Co-op</p>
+                    <text>Co-op</text>
                 </div>
             </div>
 
@@ -134,32 +138,32 @@
                         class="keyElipse"
                         style="background-color:#25EC93"
                     ></div>
-                    <p>complete</p>
-                    <button> Details Placeholder </button>
+                    <text> complete </text>
+                    <Button type="tertiary" href="./complete">See details</Button>
                 </div>
                 <div class="listItem">
                     <div
                         class="keyElipse"
                         style="background-color:#6CC6EA"
                     ></div>
-                    <p>in progress</p>
-                    <button> Details Placeholder </button>
+                    <text> in progress </text>
+                    <Button type="tertiary">See details</Button>
                 </div>
                 <div class="listItem">
                     <div
                         class="keyElipse"
                         style="background-color:#EC2542"
                     ></div>
-                    <p>missing</p>
-                    <button> Details Placeholder </button>
+                    <text> missing </text>
+                    <Button type="tertiary" href="./missing">See details</Button>
                 </div>
                 <div class="listItem">
                     <div
                         class="keyElipse"
                         style="background-color:#F3F3F3"
                     ></div>
-                    <p>future</p>
-                    <button> Details Placeholder </button>
+                    <text> future </text>
+                    <Button type="tertiary" href="./future">See details</Button>
                 </div>
             </div>
         </Card>
@@ -167,6 +171,7 @@
 </div>
 
 <style>
+    .gap {
     .gap {
         display: flex;
 
@@ -188,6 +193,9 @@
         gap: 20px;
         align-self: stretch;
     }
+
+    .left_right {
+        display: flex;
 
     .left_right {
         display: flex;
