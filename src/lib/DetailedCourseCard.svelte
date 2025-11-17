@@ -3,6 +3,11 @@
     export let courseName = "Course Name";
     export let courseDescription = "This is a description of the course.";
     export let redirectURL = "#";
+    
+    export let grades = "Grade: F";
+    export let creditHours = "Units: 0.0";
+    export let professor = "Professor: Firstname Lastname";
+    export let when = "When: N/A";
 </script>
 
 <Card>
@@ -17,13 +22,13 @@
         <div id="divider"></div>
 
         <div id="info1">
-            <p class="detailtext">Grade: A</p>
-            <p class="detailtext">Units: 3.00</p>
+            <p class="detailtext">{grades}</p>
+            <p class="detailtext">{creditHours}</p>
         </div>
 
         <div id="info2">
-            <p class="detailtext">Professor: Firstname Lastname</p>
-            <p class="detailtext">When: Fall Semester 2023</p>
+            <p class="detailtext">{professor}</p>
+            <p class="detailtext">{when}</p>
         </div>
     </div>
     
