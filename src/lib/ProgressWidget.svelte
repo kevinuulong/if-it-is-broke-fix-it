@@ -150,7 +150,7 @@
                         style="background-color:#6CC6EA"
                     ></div>
                     <p>{current} in progress </p>
-                    <Button type="tertiary">See details</Button>
+                    <Button type="tertiary" href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_LIST.GBL?a=92">See details</Button>
                 </div>
                 <div class="listItem">
                     <div
