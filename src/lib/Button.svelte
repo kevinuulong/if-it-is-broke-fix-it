@@ -39,6 +39,7 @@
 
         border: none;
         box-sizing: border-box;
+        text-decoration: none;
     }
 
     .icon-button {
@@ -94,6 +95,7 @@
     .link {
         color: var(--Primary-UC-Red);
         background: transparent;
+        text-decoration: underline;
 
         &:hover,
         &:focus {

@@ -120,7 +120,7 @@
                         style="background-color:#25EC93"
                     ></div>
                     <text> complete </text>
-                    <Button type="tertiary">See details</Button>
+                    <Button type="tertiary" href="./complete">See details</Button>
                 </div>
                 <div class="listItem">
                     <div
@@ -136,7 +136,7 @@
                         style="background-color:#EC2542"
                     ></div>
                     <text> missing </text>
-                    <Button type="tertiary">See details</Button>
+                    <Button type="tertiary" href="./missing">See details</Button>
                 </div>
                 <div class="listItem">
                     <div
@@ -144,7 +144,7 @@
                         style="background-color:#F3F3F3"
                     ></div>
                     <text> future </text>
-                    <Button type="tertiary">See details</Button>
+                    <Button type="tertiary" href="./future">See details</Button>
                 </div>
             </div>
         </Card>
