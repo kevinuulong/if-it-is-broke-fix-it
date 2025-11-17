@@ -2,16 +2,12 @@
     import Card from "./Card.svelte";
     import ClassData from "$lib/ClassData.json";
     import CoopData from "$lib/CoopData.json";
-    import CoopData from "$lib/CoopData.json";
     import PieChart from "$lib/PieChart.svelte";
     import warning from "$lib/icons/Warning.svg";
     import hourglass from "$lib/icons/HourglassTop.svg";
     import openInNew from "$lib/icons/OpenInNew.svg?raw";
     import Button from "./Button.svelte";
 </script>
-
-<div class="title">
-    <h2>Degree Audit</h2>
 
 <div class="title">
     <h2>Degree Audit</h2>
@@ -171,7 +167,7 @@
 </div>
 
 <style>
-    .gap {
+    
     .gap {
         display: flex;
 
@@ -196,7 +192,7 @@
 
     .left_right {
         display: flex;
-
+    }
     .left_right {
         display: flex;
     }
