@@ -6,17 +6,17 @@
     <h1 id="h1Header">Future Cources</h1>
     <h2 id="h2Header">Semester 4</h2>
     <CourseCard courseName="COOP 4001"
-        redirectURL="#"
+        redirectURL="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
         courseDescription="Student will need to do their 4th Co-op in this semester."/>
     <h2 id="h2Header">Semester 5</h2>
     <CourseCard courseName="CS 5002"
-        redirectURL="#"
+        redirectURL="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
         courseDescription="Second of two semester laboratory series in which students create a significant product capitalizing on their prior four years of computer science education."/>
     <CourseCard courseName="CS 5125"
-        redirectURL="#"
+        redirectURL="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
         courseDescription="This is an introduction course to the fields of data compression, data encryption, and error detection at the senior undergraduate and beginning graduate level."/>
     <CourseCard courseName="3rd BOK"
-        redirectURL="#"
+        redirectURL="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
         courseDescription="Students will need to take their 3rd BOK this semester. Open the popup link to see the courses available and eligible for this credit."/>
 </div>
 

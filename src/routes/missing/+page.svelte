@@ -6,10 +6,10 @@
     <h1 id="h1Header">Degree Audit</h1>
     <h2 id="h2Header">Missing Courses</h2>
     <CourseCard courseName="CS 5167"
-        redirectURL="#"
+        redirectURL="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
         courseDescription="This course introduces the basic concepts of human computer interaction and the latest development of the technology for developing interactive systems."/>
     <CourseCard courseName="CS 5124"
-        redirectURL="#"
+        redirectURL="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
         courseDescription="This course introduces students to data visualization - a computer science research area that uses methods in human-centered computing to address contemporary data science challenges."/>
 </div>
 
