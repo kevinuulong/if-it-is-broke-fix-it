@@ -5,7 +5,12 @@
 <div id="background">
     <h1 id="h1Header">Degree Audit</h1>
     <h2 id="h2Header">Missing Courses</h2>
-    <CourseCard courseName="CS 4156" courseDescription="This course covers over operating systems using Ubuntu VM."/>
+    <CourseCard courseName="CS 5167"
+        redirectURL="#"
+        courseDescription="This course introduces the basic concepts of human computer interaction and the latest development of the technology for developing interactive systems."/>
+    <CourseCard courseName="CS 5124"
+        redirectURL="#"
+        courseDescription="This course introduces students to data visualization - a computer science research area that uses methods in human-centered computing to address contemporary data science challenges."/>
 </div>
 
 <style>

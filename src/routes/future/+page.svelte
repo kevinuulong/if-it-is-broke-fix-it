@@ -6,13 +6,17 @@
     <h1 id="h1Header">Future Cources</h1>
     <h2 id="h2Header">Semester 4</h2>
     <CourseCard courseName="COOP 4001"
+        redirectURL="#"
         courseDescription="Student will need to do their 4th Co-op in this semester."/>
     <h2 id="h2Header">Semester 5</h2>
-    <CourseCard courseName="ENGL 2001"
-        courseDescription="This course is English Composition where students will learn how to write a narrative essay, and a research study in the professional world. "/>
-    <CourseCard courseName="CS 4156"
-        courseDescription="This course covers over operating systems using Ubuntu VM."/>
+    <CourseCard courseName="CS 5002"
+        redirectURL="#"
+        courseDescription="Second of two semester laboratory series in which students create a significant product capitalizing on their prior four years of computer science education."/>
+    <CourseCard courseName="CS 5125"
+        redirectURL="#"
+        courseDescription="This is an introduction course to the fields of data compression, data encryption, and error detection at the senior undergraduate and beginning graduate level."/>
     <CourseCard courseName="3rd BOK"
+        redirectURL="#"
         courseDescription="Students will need to take their 3rd BOK this semester. Open the popup link to see the courses available and eligible for this credit."/>
 </div>
 
