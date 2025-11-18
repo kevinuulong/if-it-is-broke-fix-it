@@ -5,15 +5,35 @@
 <div id="background">
     <h1 id="h1Header">Completed Cources</h1>
     <h2 id="h2Header">Semester 2</h2>
-    <DetailedCourseCard courseName="COOP 4001"
-        courseDescription="Student will need to do their 4th Co-op in this semester."/>
+    <DetailedCourseCard courseName="COOP 2011"
+        grades="P"
+        creditHours="3.00"
+        professor="Mahogany Plywood"
+        when="Spring Semester 2023"
+        redirectURL="#"
+        courseDescription="Student will need to do their 1st Co-op in this semester."/>
     <h2 id="h2Header">Semester 1</h2>
     <DetailedCourseCard courseName="ENGL 2001"
+        grades="C"
+        creditHours="3.00"
+        professor="Nomor Esays"
+        when="Fall Semester 2022"
+        redirectURL="#"
         courseDescription="This course is English Composition where students will learn how to write a narrative essay, and a research study in the professional world. "/>
     <DetailedCourseCard courseName="CS 4156"
+        grades="B"
+        creditHours="3.00"
+        professor="Ined Ajob"
+        when="Fall Semester 2022"
+        redirectURL="#"
         courseDescription="This course covers over operating systems using Ubuntu VM."/>
-    <DetailedCourseCard courseName="3rd BOK"
-        courseDescription="Students will need to take their 3rd BOK this semester. Open the popup link to see the courses available and eligible for this credit."/>
+    <DetailedCourseCard courseName="FIN 4021"
+        grades="A"
+        creditHours="5.00"
+        professor="Howget Cash"
+        when="Fall Semester 2022"
+        redirectURL="#"
+        courseDescription="Students will learn about options, futures, forwards, and swaps."/>
 </div>
 
 <style>

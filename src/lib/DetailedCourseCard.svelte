@@ -1,36 +1,39 @@
 <script>
     import Card from "./Card.svelte";
     import Button from "./Button.svelte";
+    import openInNew from "$lib/icons/OpenInNew.svg?raw";
 
     export let courseName = "Course Name";
     export let courseDescription = "This is a description of the course.";
     export let redirectURL = "#";
     
-    export let grades = "Grade: F";
-    export let creditHours = "Units: 0.0";
-    export let professor = "Professor: Firstname Lastname";
-    export let when = "When: N/A";
+    export let grades = "F";
+    export let creditHours = "0.00";
+    export let professor = "Firstname Lastname";
+    export let when = "N/A";
 </script>
 
 <Card>
-    <Button id="redirectURL" on:click={() => window.location.href = redirectURL}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M5 21C4.45 21 3.97933 20.8043 3.588 20.413C3.19667 20.0217 3.00067 19.5507 3 19V5C3 4.45 3.196 3.97933 3.588 3.588C3.98 3.19667 4.45067 3.00067 5 3H12V5H5V19H19V12H21V19C21 19.55 20.8043 20.021 20.413 20.413C20.0217 20.805 19.5507 21.0007 19 21H5ZM9.7 15.7L8.3 14.3L17.6 5H14V3H21V10H19V6.4L9.7 15.7Z" fill="black"/>
-        </svg>
-    </Button>
+    <div id="redirectURL">
+        <Button on:click={() => window.location.href = redirectURL}
+        type="link"
+        href={redirectURL}
+        icon={openInNew}
+        target="_blank"/>
+    </div>
 
     <div id="infoholder">
         <p id="courseName">{courseName}</p>
         <div id="divider"></div>
 
         <div id="info1">
-            <p class="detailtext">{grades}</p>
-            <p class="detailtext">{creditHours}</p>
+            <p class="detailtext">Grade: {grades}</p>
+            <p class="detailtext">Units: {creditHours}</p>
         </div>
 
         <div id="info2">
-            <p class="detailtext">{professor}</p>
-            <p class="detailtext">{when}</p>
+            <p class="detailtext">Professor: {professor}</p>
+            <p class="detailtext">When: {when}</p>
         </div>
     </div>
     
@@ -98,7 +101,7 @@
     display: flex;
     width: 760px;
     height: 54px;
-    padding: 0 10px;
+    padding: 0;
     align-items: center;
     gap: 9px;
     flex-shrink: 0;
