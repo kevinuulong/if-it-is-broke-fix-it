@@ -13,7 +13,7 @@
 
     <div id="redirectURL">
         <Button on:click={() => window.location.href = redirectURL}
-        type="link"
+        type="tertiary"
         href={redirectURL}
         icon={openInNew}
         target="_blank"/>

@@ -67,12 +67,11 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Degree Audit | Catalyst</title>
 </svelte:head>
 
 <div class="red_box">
 	<Button icon={back} onclick={() => goback()}></Button>
-	<Button icon={history}></Button>
-	<Button icon={favorite}></Button>
 
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -177,8 +176,14 @@
 
 		box-sizing: border-box;
 	}
+
+	.menu_button {
+		&:hover, &:focus {
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+	}
 	.current_button {
-		background: rgba(255, 255, 255, 0.7);
+		background: rgba(255, 255, 255, 0.8);
 		display: flex;
 		height: 68px;
 		padding: 10px 0 10px 20px;

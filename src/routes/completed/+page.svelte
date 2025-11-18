@@ -3,7 +3,7 @@
 </script>
 
 <div id="background">
-    <h1 id="h1Header">Completed Cources</h1>
+    <h1 id="h1Header">Completed Courses</h1>
     <h2 id="h2Header">Semester 2</h2>
     <DetailedCourseCard courseName="COOP 2011"
         grades="P"

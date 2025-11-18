@@ -3,7 +3,7 @@
 </script>
 
 <div id="background">
-    <h1 id="h1Header">Future Cources</h1>
+    <h1 id="h1Header">Future Courses</h1>
     <h2 id="h2Header">Semester 4</h2>
     <CourseCard courseName="COOP 4001"
         redirectURL="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"

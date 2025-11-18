@@ -9,15 +9,14 @@
     import Button from "./Button.svelte";
 
     // Find objects by name
-    const complete = ClassData.find(item => item.name === "Complete").value;
-    const current = ClassData.find(item => item.name === "Current").value;
-    const missing = ClassData.find(item => item.name === "Missing").value;
-    const future = ClassData.find(item => item.name === "Future").value;
-    
+    const complete = ClassData.find((item) => item.name === "Complete").value;
+    const current = ClassData.find((item) => item.name === "Current").value;
+    const missing = ClassData.find((item) => item.name === "Missing").value;
+    const future = ClassData.find((item) => item.name === "Future").value;
 </script>
 
 <div class="title">
-    <h2>Degree Audit</h2>
+    <h1>Degree Audit</h1>
 </div>
 <div class="left_right">
     <div class="left">
@@ -63,9 +62,10 @@
                 </div>
                 <div>
                     <Button
-                    type="primary"
-                    href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
-                    >See Details</Button>
+                        type="primary"
+                        href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
+                        >See Details</Button
+                    >
                 </div>
             </div>
         </Card>
@@ -85,34 +85,33 @@
                     <div class="listItem">
                         <p>CS 5170</p>
                         <Button
-                    type="link"
-                    href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
-                >
-                    See Details
-                </Button>
+                            type="tertiary"
+                            href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
+                        >
+                            See Details
+                        </Button>
                     </div>
                     <div class="listItem">
                         <p>EECE 5136</p>
                         <Button
-                    type="link"
-                    href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
-                >
-                    See Details
-                </Button>
+                            type="tertiary"
+                            href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
+                        >
+                            See Details
+                        </Button>
                     </div>
                     <div class="listItem">
                         <p>FAA 1062</p>
                         <Button
-                    type="link"
-                    href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
-                >
-                    See Details
-                </Button>
+                            type="tertiary"
+                            href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.CLASS_SEARCH.GBL?a=92"
+                        >
+                            See Details
+                        </Button>
                     </div>
                 </div>
 
                 <Button
-                    
                     type="primary"
                     href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_LIST.GBL?a=92"
                 >
@@ -141,31 +140,38 @@
                         class="keyElipse"
                         style="background-color:#25EC93"
                     ></div>
-                    <p>{complete} complete </p>
-                    <Button type="tertiary" href="./complete">See details</Button>
+                    <p>{complete} complete</p>
+                    <Button type="tertiary" href="./complete"
+                        >See details</Button
+                    >
                 </div>
                 <div class="listItem">
                     <div
                         class="keyElipse"
                         style="background-color:#6CC6EA"
                     ></div>
-                    <p>{current} in progress </p>
-                    <Button type="tertiary" href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_LIST.GBL?a=92">See details</Button>
+                    <p>{current} in progress</p>
+                    <Button
+                        type="tertiary"
+                        href="https://www.catalyst.uc.edu/psp/ps/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSR_SSENRL_LIST.GBL?a=92"
+                        >See details</Button
+                    >
                 </div>
                 <div class="listItem">
                     <div
                         class="keyElipse"
                         style="background-color:#EC2542"
                     ></div>
-                    <p>{missing} missing </p>
-                    <Button type="tertiary" href="./missing">See details</Button>
+                    <p>{missing} missing</p>
+                    <Button type="tertiary" href="./missing">See details</Button
+                    >
                 </div>
                 <div class="listItem">
                     <div
                         class="keyElipse"
                         style="background-color:#F3F3F3"
                     ></div>
-                    <p>{future} future </p>
+                    <p>{future} future</p>
                     <Button type="tertiary" href="./future">See details</Button>
                 </div>
             </div>
@@ -174,7 +180,6 @@
 </div>
 
 <style>
-    
     .gap {
         display: flex;
 
@@ -255,7 +260,10 @@
         align-items: center;
         gap: 10px;
         align-self: stretch;
-        justify-content: space-between;
+
+        & p {
+            flex-grow: 1;
+        }
     }
 
     .keyElipse {
@@ -263,7 +271,7 @@
         height: 24px;
         aspect-ratio: 1/1;
         border: solid 1px black;
-        border-radius: 12px;
+        border-radius: 50%;
     }
 
     .title {
